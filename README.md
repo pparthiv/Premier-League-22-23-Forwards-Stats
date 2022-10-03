@@ -20,6 +20,6 @@ pip install tqdm
 Run the setup.py to update the player table to the latest version. The downloading time depends on the internet speed and may take longer on slower speeds.
 You can use the software without updating the tables as well.
 
-![setup.py](Premier-League-22-23-Forwards-Stats/Assets/setup.png)
+![setup.py](./Assets/setup.png)
 
 After updating the table, you may run the .Rmd file to see the visualizations.
