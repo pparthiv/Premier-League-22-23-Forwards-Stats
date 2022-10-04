@@ -123,6 +123,8 @@ players <- gsub("\\.", " ", colnames(prem))
 
 This plot presents a player's performance compared to the 50th percentile in the league in the shape of a horizontal line chart.
 
+Select a player below to see where they rank among their peers in the league.
+
 ```{r, echo=FALSE}
 
 inputPanel(
@@ -142,6 +144,8 @@ renderPlotly({
 ## Radar Chart
 
 The following chart presents the radar-chart (or a spider plot) of a player's performance among various categories. These categories have been selected by the 'SCOUTING REPORT' panel of FBRef.
+
+Select up to five players to compare their playing style and tendencies with each other. The players are color coded to signify their individual radar chart.
 
 ```{r, echo=FALSE}
 inputPanel(
@@ -179,6 +183,8 @@ renderPlot({
 ## Scatter Plot
 
 The following plot shows the performance among the categories and returns a relation among those two. The grey zone is the confidence level of the values.
+
+Select two categories to see the correlation between them and see which players perform in what manner in relation to the other.
 
 ```{r, echo=FALSE}
 
