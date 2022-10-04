@@ -14,8 +14,9 @@ pip install pandas
 pip install numpy
 pip install tqdm
 ```
-
 ## Running the Scripts
+
+To run the program go through the following steps.
 
 ### setup.py
 Run the setup.py to update the player table to the latest version. The downloading time depends on the internet speed and may take longer on slower speeds.
