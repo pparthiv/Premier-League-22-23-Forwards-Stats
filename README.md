@@ -18,7 +18,7 @@ pip install tqdm
 
 To run the program go through the following steps.
 
-### Repository
+### Clonning theRepository
 First clone the repository.
 ```
 https://github.com/pparthiv/Premier-League-22-23-Forwards-Stats.git
@@ -45,7 +45,7 @@ After doing so, open the .Rmd file with RStudio and run the document.
 
 ![PremierLeagueFWsStats.Rmd](./Assets/document.png)
 
-And that is it. Now you can view the visualizations and select the performances of Premier League 2022/23 Forwards. 
+And that is it. Now you can view the visualizations and see the statisical performances of Premier League 2022/23 Forwards. 
 
 ![PremierLeagueFWsStats.Rmd](./Assets/final.png)
 
