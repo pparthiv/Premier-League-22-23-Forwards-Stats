@@ -6,13 +6,13 @@ A dynamic RMarkdown project aiming to visualize the statistical performance of P
 
 Install [Python](https://www.python.org/downloads/), [R](https://cran.r-project.org/bin/windows/base/), and [RStudio](https://www.rstudio.com/products/rstudio/download/) to use the files.
 
-To run the setup.py, install these libraries.
+To run the setup.py, install these Python libraries. 
 
 ```
-pip install time
-pip install pandas
-pip install numpy
-pip install tqdm
+$ pip install time
+$ pip install pandas
+$ pip install numpy
+$ pip install tqdm
 ```
 ## Running the Scripts
 
