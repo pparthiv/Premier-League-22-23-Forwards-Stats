@@ -42,7 +42,7 @@ Open the .Rmd file with RStudio. When opening for the first time, the file will 
 And that is it. Now you can view the visualizations and see the statisical performances of Premier League 2022/23 Forwards. 
 
 ![PremierLeagueFWsStats_Perc.Rmd](./Assets/final.png)
-![PremierLeagueFWsStats_Radar.Rmd](./Assets/final_2.png)
+![PremierLeagueFWsStats_Radar.Rmd](./Assets/final.png)
 ![PremierLeagueFWsStats_Scatter.Rmd](./Assets/final_3.png)
 
 ## Source
