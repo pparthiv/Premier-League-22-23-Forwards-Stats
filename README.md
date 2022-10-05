@@ -4,7 +4,7 @@ A dynamic RMarkdown project aiming to visualize the statistical performance of P
 
 ## Prerequisites
 
-Install Python, R, and RStudio to use the files.
+Install [Python](https://www.python.org/downloads/), [R](https://cran.r-project.org/bin/windows/base/), and [RStudio](https://www.rstudio.com/products/rstudio/download/) to use the files.
 
 To run the setup.py, install these libraries.
 
