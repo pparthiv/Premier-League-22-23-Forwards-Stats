@@ -21,7 +21,7 @@ To run the program go through the following steps.
 ### Clonning theRepository
 First clone the repository.
 ```
-https://github.com/pparthiv/Premier-League-22-23-Forwards-Stats.git
+$ git clone https://github.com/pparthiv/Premier-League-22-23-Forwards-Stats.git
 ```
 
 ### setup.py
