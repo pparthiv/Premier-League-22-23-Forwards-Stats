@@ -106,7 +106,8 @@ ui <- dashboardPage(
     sidebarMenu(menuItem("Compare Players", tabName = "comp", icon = icon("person")),
                 menuItem("Plot Players by Categories", tabName = "plots", icon = icon("chart-simple")),
                 menuItem("Player Performance", tabName = "50th", icon = icon("sliders")),
-                menuItem("Data from FBRef", tabName = "table", icon = icon("table"))
+                menuItem("Data from FBRef", tabName = "table", icon = icon("table")),
+                menuItem("github.com/pparthiv", icon = icon("github"))
     )
   ),
   dashboardBody(
