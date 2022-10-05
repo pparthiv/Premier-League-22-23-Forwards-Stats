@@ -35,13 +35,7 @@ After updating the table, you may run the .Rmd file to see the visualizations.
 ### PremierLeagueFWsStats.Rmd
 This is the RMarkdown file which is responsible for projecting the visuals.
 
-Before running the .Rmd file, install the following libraries in RStudio.
-
-```
-install.packages(c("tidyverse","dplyr","fmsb","shiny","DT","ggplot2","plotly"))
-```
-
-After doing so, open the .Rmd file with RStudio and run the document.
+Open the .Rmd file with RStudio. When opening for the first time, the file will require some time in order to finish downloading the required libraries.
 
 ![PremierLeagueFWsStats.Rmd](./Assets/document.png)
 
