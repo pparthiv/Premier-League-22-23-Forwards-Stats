@@ -1,6 +1,6 @@
 # Premier League 22/23 Forwards Stats
 
-A dynamic RMarkdown project aiming to visualize the statistical performance of Premier League Forwards 2022/23.
+A dynamic R shinyapp and an RMarkdown project aiming to visualize the statistical performance of Premier League Forwards 2022/23.
 
 You can view the **app online**, [Premier League 2022/23 Forwards](https://gdjpoi-parthiv-purkayastha.shinyapps.io/EPL_22_23_Forwards/), or go through the steps below to run them on your local machine.
 
