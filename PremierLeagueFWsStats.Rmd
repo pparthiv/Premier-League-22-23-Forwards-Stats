@@ -10,20 +10,21 @@ runtime: shiny
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This notebook presents the statistics of current Premier League 22/23 Season Forwards acquired through [FBRef](https://fbref.com/en/) (powered by [StatsBomb](https://statsbomb.com/)).
+This notebook presents the statistics of current Premier League 22/23 Season Forwards acquired through [FBRef](https://fbref.com/en/) (data provided by [StatsBomb](https://statsbomb.com/)).
 
 The notebook embeds an R shiny app which consists of options to compare players through visualizations or to rank them among others through the help of visualizations.
 
 Unfortunately, some players are unavailable to be selected as they do not fulfill the [criteria](https://fbref.com/en/about/scouting-reports-explained) selected.
 
 ```{r, include=FALSE}
-library(tidyverse)
-library(dplyr)
-library(fmsb)
-library(shiny)
-library(DT)
-library(ggplot2)
-library(plotly)
+ packages <- c("tidyverse","dplyr","fmsb","shiny","DT","ggplot2","plotly")
+
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+invisible(lapply(packages, library, character.only = TRUE))
 ```
 
 ```{r, include=FALSE}
@@ -66,7 +67,7 @@ radar_chart <- function(name1, name2, name3, name4, name5){
   colr <- c(rgb(0.8, 0, 0, 1),rgb(0, 0.8, 0.8, 1),rgb(1, 1, 0, 1),rgb(1, 0.4, 0, 1),rgb(0, 1, 0.2, 1))
   colr_f <- c(rgb(0.8, 0, 0, 0.5),rgb(0, 0.8, 0.8, 0.5),rgb(1, 1, 0, 0.5),rgb(1, 0.4, 0, 0.5),rgb(0, 1, 0.2, 0.5))
   
-  radarchart(df, cglty = 1, pcol = colr, pfcol = colr_f, plwd = 2, plty = 1, vlabels = v_label, vlcex = 0.9)
+  radarchart(df, cglty = 1, pcol = colr, pfcol = colr_f, plwd = 2, plty = 1, vlabels = v_label, vlcex = 0.75)
 }
 
 scatter_fw <- function(value1, value2, df){
@@ -184,7 +185,7 @@ renderPlot({
 
 The following plot shows the performance among the categories and returns a relation among those two. The grey zone is the confidence level of the values.
 
-Select two categories to see the correlation between them and see which players perform in what manner in relation to the other.
+Select two categories to see the correlation between them and see which players perform in what manner in relation to the other. To isolate the statistics by teams, click the team name on the legend (on the right hand side).
 
 ```{r, echo=FALSE}
 
